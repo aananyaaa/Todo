@@ -1,0 +1,90 @@
+.todolist {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    width: 100%;
+}
+
+.todolist>li {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #101e56a6;
+    border-radius: 20px;
+    padding: 5px;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.todo-task {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-grow: 100;
+}
+
+.todo-task>span {
+    text-align: left;
+    color: white;
+}
+
+.MuiButton-icon {
+    margin: 0 !important;
+}
+
+.deleteText>span {
+    color: white;
+}
+
+.todo-list-container {
+    max-height: 300px;
+    /* Set the maximum height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+.todolist::-webkit-scrollbar {
+    display: none;
+}
+
+.count-wrap {
+    margin-bottom: 10px;
+    margin-top: 16px;
+    margin-left: 2px;
+    text-align: center;
+    color: white;
+}
+
+.count-wrap span {
+    color: #a019c2;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .todo-list-container {
+        max-height: calc(100vh - 200px); /* Adjust based on other elements' height */
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+    
+    .todolist {
+        gap: 10px;
+    }
+
+    .todolist > li {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .count-wrap {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .count-wrap span {
+        font-size: 14px;
+    }
+}

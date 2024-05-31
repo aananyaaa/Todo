@@ -1,0 +1,18 @@
+.todo-wrap {
+    width: 650px;
+    height: auto;
+    border-radius: 30px;
+    background-color: #00002c;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .todo-wrap {
+        width: 100%;
+    }
+}

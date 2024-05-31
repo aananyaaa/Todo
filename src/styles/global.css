@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(20deg, #2a1a8f, #030a23 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    margin: 0;
+}
+
+.MuiTextField-root {
+    width: 100%;
+}
+
+#root {
+    margin: 0 20px;
+}
+
+@media screen and (max-width:768px) {
+    #root {
+        width: 100%;
+    }
+
+    .MuiBox-root {
+        width: 95% !important;
+    }
+
+    .heading h2 {
+        font-size: 30px; /* Reduce font size for h2 */
+    }
+
+}
